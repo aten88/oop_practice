@@ -10,3 +10,9 @@ class Point:
         return c
 
 # %%
+
+
+pt1 = Point()
+pt2 = Point()
+print(pt1.set_coords(1, 2))
+print(pt2.set_coords(3, 4))
