@@ -2,7 +2,7 @@ class Point:
     color = 'red'
     circle = 2
 
-    def __init__(self, x, y) -> None:
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
 
@@ -12,12 +12,12 @@ class Point:
     def set_coords(self, x, y):
         self.x = x
         self.y = y
-        print('Вызов метода set_coords')
+        return self.x + self.y
 
     def get_coords(self):
         return self.x, self.y
 
 
-pt = Point(0, 0)
+pt = Point()
 
-c = 5 + pt.x
+print(pt.__dict__)
