@@ -1,4 +1,4 @@
-from accessify import private, protected
+from accessify import private
 
 
 class Point:
